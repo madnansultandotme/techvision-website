@@ -1,0 +1,174 @@
+/* General Styles */
+:root {
+    --navy: #0A2540;
+    --electric: #00A0E4;
+    --yellow: #FFD700;
+    --light-gray: #F5F5F5;
+    --dark-gray: #333333;
+}
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #1a1a1a; /* Dark background */
+    color: #f3f4f6; /* Light text */
+}
+
+.dark-theme .navbar {
+    background-color: #111827; /* Darker navbar */
+}
+
+.dark-theme .hero {
+    background: linear-gradient(45deg, #111827, #1e3a8a); /* Dark gradient */
+}
+
+.dark-theme .services-grid .service-card,
+.dark-theme .project-grid .project-card,
+.dark-theme .testimonial-slider .testimonial,
+.dark-theme .contact-form,
+.dark-theme .contact-info,
+.dark-theme .pricing .pricing-card {
+    background-color: #1f2937; /* Dark card background */
+    color: #f3f4f6; /* Light text */
+}
+
+.dark-theme .cta {
+    background: linear-gradient(45deg, #111827, #1e3a8a); /* Dark gradient */
+}
+
+.dark-theme footer {
+    background-color: #111827; /* Dark footer */
+}
+
+body {
+    font-family: 'CustomFont', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--navy);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.theme-toggle {
+    cursor: pointer;
+}
+/* Mobile Menu Styles */
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+#mobile-menu ul {
+    background-color: #1a365d; /* Match navbar color */
+}
+
+#mobile-menu ul li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#mobile-menu ul li a:hover {
+    color: #93c5fd; /* Light blue hover color */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, var(--navy), var(--electric));
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero .cta-button {
+    background-color: var(--yellow);
+    color: var(--navy);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial {
+    display: none;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}

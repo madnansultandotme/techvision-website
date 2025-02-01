@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision | Services</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans light-theme">
+<!-- Navbar -->
+<nav class="bg-blue-900 text-white py-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-4">
+        <!-- Logo -->
+        <a href="/" class="text-2xl font-bold">TechVision</a>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="hover:text-blue-300">Home</a></li>
+            <li><a href="services.html" class="hover:text-blue-300">Services</a></li>
+            <li><a href="projects.html" class="hover:text-blue-300">Projects</a></li>
+            <li><a href="contact.html" class="hover:text-blue-300">Contact</a></li>
+        </ul>
+
+        <!-- Theme Toggle -->
+        <div class="theme-toggle cursor-pointer">
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobile-menu" class="md:hidden hidden bg-blue-900">
+        <ul class="flex flex-col space-y-4 p-4">
+            <li><a href="index.html" class="block hover:text-blue-300">Home</a></li>
+            <li><a href="services.html" class="block hover:text-blue-300">Services</a></li>
+            <li><a href="projects.html" class="block hover:text-blue-300">Projects</a></li>
+            <li><a href="contact.html" class="block hover:text-blue-300">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4" data-aos="fade-up">Our Services</h1>
+            <p class="text-xl mb-8" data-aos="fade-up" data-aos-delay="200">We offer a wide range of services to help your business grow and succeed.</p>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="services-overview py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">What We Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+                    <i class="fas fa-code text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p class="text-gray-700">We create modern, responsive, and scalable websites tailored to your business needs.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-mobile-alt text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Mobile Apps</h3>
+                    <p class="text-gray-700">We develop cross-platform mobile applications for iOS and Android.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-robot text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">AI Solutions</h3>
+                    <p class="text-gray-700">We provide cutting-edge AI and machine learning solutions to automate and optimize your business processes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services Section -->
+    <section class="detailed-services bg-blue-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Detailed Services</h2>
+            <div class="space-y-8">
+                <!-- Web Development -->
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                    <p class="text-gray-700 mb-4">Our web development services include:</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Custom Website Design</li>
+                        <li>E-commerce Development</li>
+                        <li>Content Management Systems (CMS)</li>
+                        <li>API Integration</li>
+                        <li>Website Maintenance</li>
+                    </ul>
+                    <a href="#" class="text-blue-900 font-semibold hover:underline">Learn More</a>
+                </div>
+                <!-- Mobile Apps -->
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4">Mobile Apps</h3>
+                    <p class="text-gray-700 mb-4">Our mobile app services include:</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>iOS App Development</li>
+                        <li>Android App Development</li>
+                        <li>Cross-Platform Development</li>
+                        <li>UI/UX Design</li>
+                        <li>App Testing & Deployment</li>
+                    </ul>
+                    <a href="#" class="text-blue-900 font-semibold hover:underline">Learn More</a>
+                </div>
+                <!-- AI Solutions -->
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-2xl font-bold mb-4">AI Solutions</h3>
+                    <p class="text-gray-700 mb-4">Our AI services include:</p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Machine Learning Models</li>
+                        <li>Natural Language Processing (NLP)</li>
+                        <li>Computer Vision</li>
+                        <li>Predictive Analytics</li>
+                        <li>AI Chatbots</li>
+                    </ul>
+                    <a href="#" class="text-blue-900 font-semibold hover:underline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold mb-4">Basic</h3>
+                    <p class="text-gray-700 mb-4">Ideal for small businesses</p>
+                    <p class="text-4xl font-bold mb-4">$499<span class="text-lg text-gray-700">/month</span></p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>5 Pages Website</li>
+                        <li>Basic SEO</li>
+                        <li>1 Month Support</li>
+                    </ul>
+                    <a href="#" class="bg-blue-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Get Started</a>
+                </div>
+                <!-- Pro Plan -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-bold mb-4">Pro</h3>
+                    <p class="text-gray-700 mb-4">Perfect for growing businesses</p>
+                    <p class="text-4xl font-bold mb-4">$999<span class="text-lg text-gray-700">/month</span></p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>10 Pages Website</li>
+                        <li>Advanced SEO</li>
+                        <li>3 Months Support</li>
+                    </ul>
+                    <a href="#" class="bg-blue-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Get Started</a>
+                </div>
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="text-2xl font-bold mb-4">Enterprise</h3>
+                    <p class="text-gray-700 mb-4">For large-scale businesses</p>
+                    <p class="text-4xl font-bold mb-4">$1999<span class="text-lg text-gray-700">/month</span></p>
+                    <ul class="list-disc list-inside text-gray-700 mb-4">
+                        <li>Unlimited Pages</li>
+                        <li>Premium SEO</li>
+                        <li>6 Months Support</li>
+                    </ul>
+                    <a href="#" class="bg-blue-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="testimonials bg-blue-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up">
+                    <p class="text-gray-700 mb-4">"TechVision delivered beyond our expectations! Their team is highly professional and innovative."</p>
+                    <p class="font-bold">- Client A</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-gray-700 mb-4">"The mobile app they developed for us has significantly improved our customer engagement."</p>
+                    <p class="font-bold">- Client B</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 TechVision. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
